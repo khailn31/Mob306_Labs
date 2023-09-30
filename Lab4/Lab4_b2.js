@@ -32,7 +32,6 @@ const Lab4_b2 = () => {
      <TouchableHighlight
         onPress={handlePress}
         underlayColor="red"
-     
       >
         <View >
           <Text>Press Me (TouchableHighlight)</Text>

@@ -1,9 +1,10 @@
 import { View, Text, Button } from 'react-native'
 import React from 'react'
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const HomeScren = ({navigation}) => {
-  return (
-    <View style={{flexDirection:'row'}}>
+  return (<SafeAreaView>
+    <View style={{flexDirection:'row',margin:20}} >
      <Button  title='lab4' onPress={()=>{
         navigation.navigate("Lab4");
      }}/>
@@ -14,6 +15,10 @@ const HomeScren = ({navigation}) => {
         navigation.navigate("Lab4_b3");
      }}/>
     </View>
+    <Button  title='lab5' onPress={()=>{
+        navigation.navigate("lab5");
+     }}/>
+    </SafeAreaView>
   )
 }
 
