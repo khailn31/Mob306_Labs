@@ -8,7 +8,7 @@ import Lab4 from './Lab4/Lab4';
 import Lab4_b2 from './Lab4/Lab4_b2';
 import lab4_b3 from './Lab4/Lab4_b3';
 import lab5 from './Lab5/lab5';
-
+import lab6 from './lab6/lab6';
 const App = () => {
   const Stack = createNativeStackNavigator();
   return (
@@ -32,7 +32,11 @@ const App = () => {
       <Stack.Screen 
           name="lab5"
           component={lab5}/>
+            <Stack.Screen 
+          name="lab6"
+          component={lab6}/>
       </Stack.Navigator>
+     
     </NavigationContainer>
   )
 }
